@@ -9,54 +9,60 @@
     <link rel="stylesheet" href="./CSS/styles.css">
 </head>
 
-<body class="bg-dark text-white">
+<body class=" text-white">
     <div class="container mt-5">
-        <nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #ffffff;">
-            <div class="container mb-2">
-                <a class="navbar-brand" href="#">Aplicación de pruebas de color</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light rounded-pill" style="background-color: #3ae989f6;">
+            <div class="container mb-1 ">
+                <a class="navbar-brand text-white" href="#">Aplicación de pruebas de color</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+            </div>
         </nav>
 
+        <!-- Título -->
         <h1 class="text-center mt-5">RGB Color</h1>
-        <div class="row g-5">
-            <!-- Controles -->
-            <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
-                <div class="control-panel">
+
+        <!-- Controles y cuadro de color -->
+        <div class="d-flex flex-column align-items-center">
+            <!-- Controles: en fila, de derecha a izquierda -->
+            <div class="d-flex flex-row-reverse justify-content-center gap-4 flex-wrap">
+                <div class="control-panel text-center">
                     <label for="redRange" class="form-label">Rojo</label>
                     <input type="range" id="redRange" class="form-range range-slider" min="0" max="255" value="128">
-                    <input type="number" id="redInput" class="form-control neumorphic-input mt-2 text-center" min="0"
-                        max="255" value="128">
-
-                    <label for="greenRange" class="form-label mt-4">Verde</label>
+                    <input type="number" id="redInput" class="form-control neumorphic-input mt-2 text-center" min="0" max="255" value="128">
+                </div>
+                <div class="control-panel text-center">
+                    <label for="greenRange" class="form-label">Verde</label>
                     <input type="range" id="greenRange" class="form-range range-slider" min="0" max="255" value="128">
-                    <input type="number" id="greenInput" class="form-control neumorphic-input mt-2 text-center" min="0"
-                        max="255" value="128">
-
-                    <label for="blueRange" class="form-label mt-4">Azul</label>
+                    <input type="number" id="greenInput" class="form-control neumorphic-input mt-2 text-center" min="0" max="255" value="128">
+                </div>
+                <div class="control-panel text-center">
+                    <label for="blueRange" class="form-label">Azul</label>
                     <input type="range" id="blueRange" class="form-range range-slider" min="0" max="255" value="128">
-                    <input type="number" id="blueInput" class="form-control neumorphic-input mt-2 text-center" min="0"
-                        max="255" value="128">
-
-                    <label for="colorPicker" class="form-label mt-4">Selector de Color</label>
-                    <input type="color" id="colorPicker" class="form-control form-control-color mt-2 neumorphic-input">
+                    <input type="number" id="blueInput" class="form-control neumorphic-input mt-2 text-center" min="0" max="255" value="128">
+                </div>
+                <div class="control-panel text-center">
+                    <label for="colorPicker" class="form-label">Selector</label>
+                    <input type="color" id="colorPicker" class="form-control form-control-color neumorphic-input">
                 </div>
             </div>
 
             <!-- Cuadro de color -->
-            <div class="col-md-6 text-center">
+            <div class="mt-5 text-center">
                 <div id="colorBox" class="color-box mx-auto mb-4"></div>
                 <p id="hexCode" class="fs-4"></p>
             </div>
         </div>
-        <footer class="bg-dark text-white py-3">
+
+        <!-- Footer -->
+        <footer class="text-white py-3">
             <div class="container text-center">
-              <p class="mb-0">&copy; 2025 - Todos los derechos reservados | Carlos Cruz</p>
+                <p class="mb-0">&copy; 2025 - Todos los derechos reservados | Carlos Cruz</p>
             </div>
-          </footer>
+        </footer>
     </div>
     <script src="./Js/main.js"></script>
 </body>

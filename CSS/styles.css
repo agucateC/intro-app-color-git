@@ -1,6 +1,6 @@
-/* Fondo general oscuro */
+/* Fondo oscuro */
 body {
-    background-color: #121212;
+    background-color: #0b81a5 !important;
     font-family: 'Arial', sans-serif;
 }
 
@@ -12,39 +12,27 @@ h1 {
 
 /* Panel de controles */
 .control-panel {
-    width: 100%;
-    max-width: 350px;
+    min-width: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Cuadro de color */
-.color-box {
-    width: 300px;
-    height: 300px;
-    background-color: rgb(128, 128, 128);
-    border-radius: 20px;
-    border: 2px solid #333;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8), inset 0px -3px 5px rgba(255, 255, 255, 0.1);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
 /* Rango deslizante */
 .range-slider {
-    accent-color: #ff5722;
-    margin: 0;
+    accent-color: #d8a495;
+    margin: 10;
     width: 100%;
 }
 
 /* Inputs neumórficos */
 .neumorphic-input {
     border: none;
-    background: #1e1e1e;
+    background: #3ae989f6;
     color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6), -4px -4px 8px rgba(255, 255, 255, 0.1);
-    padding: 10px 15px;
+    border-radius: 100px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6), -4px -4px 8px rgba(182, 158, 158, 0.1);
+    padding: 0px 0px;
     outline: none;
     font-size: 1rem;
     transition: box-shadow 0.2s ease;
@@ -54,16 +42,20 @@ h1 {
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8), -2px -2px 6px rgba(255, 255, 255, 0.2);
 }
 
-/* Selector de color neumórfico */
-input[type="color"] {
-    border-radius: 10px;
-    padding: 0;
-    cursor: pointer;
+/* Cuadro de color */
+.color-box {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(128, 128, 128);
+    border-radius: 20px;
+    border: 2px solid #333;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8), inset 0px -3px 5px rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Código HEX */
 #hexCode {
-    color: #ffab40;
+    color: #fcfaf9;
     font-weight: bold;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
 }
