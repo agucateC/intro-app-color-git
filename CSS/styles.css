@@ -1,16 +1,28 @@
-/* Fondo oscuro */
+/* 
+🔹 Estilos generales del cuerpo de la página 
+   - Fondo con color azul oscuro (#0b81a5)
+   - Fuente predeterminada: Arial, sans-serif 
+*/
 body {
     background-color: #0b81a5 !important;
     font-family: 'Arial', sans-serif;
 }
 
-/* Títulos y textos */
+/* 
+🔹 Estilos para los títulos principales 
+   - Fuente en negrita
+   - Color blanco (#f3f3f3) para mayor contraste con el fondo
+*/
 h1 {
     font-weight: bold;
     color: #f3f3f3;
 }
 
-/* Panel de controles */
+/* 
+🔹 Panel de controles
+   - Mínimo de 150px de ancho para asegurar legibilidad
+   - Alineación vertical de los elementos en el centro 
+*/
 .control-panel {
     min-width: 150px;
     display: flex;
@@ -18,14 +30,24 @@ h1 {
     align-items: center;
 }
 
-/* Rango deslizante */
+/* 
+🔹 Estilos para los controles deslizantes (sliders)
+   - Color personalizado del control (#d8a495)
+   - Ajuste del ancho al 100% del contenedor
+*/
 .range-slider {
     accent-color: #d8a495;
     margin: 10;
     width: 100%;
 }
 
-/* Inputs neumórficos */
+/* 
+🔹 Estilos para los inputs con efecto neumórfico
+   - Fondo de color verde claro (#3ae989f6)
+   - Texto blanco para contraste
+   - Bordes redondeados con un efecto neumórfico (sombra interna y externa)
+   - Transición suave en la sombra cuando recibe el foco
+*/
 .neumorphic-input {
     border: none;
     background: #3ae989f6;
@@ -38,11 +60,21 @@ h1 {
     transition: box-shadow 0.2s ease;
 }
 
+/* 
+🔹 Efecto de enfoque en los inputs neumórficos
+   - Ajuste en la intensidad de la sombra para destacar el input activo
+*/
 .neumorphic-input:focus {
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8), -2px -2px 6px rgba(255, 255, 255, 0.2);
 }
 
-/* Cuadro de color */
+/* 
+🔹 Estilos para el cuadro de color dinámico
+   - Tamaño de 150px x 150px
+   - Fondo inicial en gris medio (rgb(128, 128, 128))
+   - Bordes redondeados y sombreados para un efecto tridimensional
+   - Transiciones suaves al cambiar de color y sombra
+*/
 .color-box {
     width: 150px;
     height: 150px;
@@ -53,10 +85,15 @@ h1 {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Código HEX */
+/* 
+🔹 Estilos para la visualización del código HEX
+   - Color de texto blanco (#fcfaf9) con negrita
+   - Efecto de sombra para mayor legibilidad
+*/
 #hexCode {
     color: #fcfaf9;
     font-weight: bold;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
 }
+
 

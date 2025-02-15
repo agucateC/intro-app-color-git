@@ -2,19 +2,29 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configuración del documento -->
+    <meta charset="UTF-8"> <!-- Define el conjunto de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea responsive -->
+    
+    <!-- Título de la página -->
     <title>RGB Color</title>
+
+    <!-- Importación de Bootstrap para estilos prediseñados -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Enlace al archivo de estilos personalizados -->
     <link rel="stylesheet" href="./CSS/styles.css">
 </head>
 
-<body class=" text-white">
+<body class="text-white">
     <div class="container mt-5">
-        <!-- Navbar -->
+        <!-- Barra de navegación -->
         <nav class="navbar navbar-expand-lg navbar-light rounded-pill" style="background-color: #3ae989f6;">
-            <div class="container mb-1 ">
+            <div class="container mb-1">
+                <!-- Nombre de la aplicación -->
                 <a class="navbar-brand text-white" href="#">Aplicación de pruebas de color</a>
+                
+                <!-- Botón de navegación para pantallas pequeñas -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -22,48 +32,59 @@
             </div>
         </nav>
 
-        <!-- Título -->
+        <!-- Título principal -->
         <h1 class="text-center mt-5">RGB Color</h1>
 
-        <!-- Controles y cuadro de color -->
+        <!-- Contenedor de controles y cuadro de color -->
         <div class="d-flex flex-column align-items-center">
-            <!-- Controles: en fila, de derecha a izquierda -->
+            
+            <!-- Controles para ajustar valores de RGB y selector de color -->
             <div class="d-flex flex-row-reverse justify-content-center gap-4 flex-wrap">
+                
+                <!-- Control para el color rojo -->
                 <div class="control-panel text-center">
                     <label for="redRange" class="form-label">Rojo</label>
                     <input type="range" id="redRange" class="form-range range-slider" min="0" max="255" value="128">
                     <input type="number" id="redInput" class="form-control neumorphic-input mt-2 text-center" min="0" max="255" value="128">
                 </div>
+
+                <!-- Control para el color verde -->
                 <div class="control-panel text-center">
                     <label for="greenRange" class="form-label">Verde</label>
                     <input type="range" id="greenRange" class="form-range range-slider" min="0" max="255" value="128">
                     <input type="number" id="greenInput" class="form-control neumorphic-input mt-2 text-center" min="0" max="255" value="128">
                 </div>
+
+                <!-- Control para el color azul -->
                 <div class="control-panel text-center">
                     <label for="blueRange" class="form-label">Azul</label>
                     <input type="range" id="blueRange" class="form-range range-slider" min="0" max="255" value="128">
                     <input type="number" id="blueInput" class="form-control neumorphic-input mt-2 text-center" min="0" max="255" value="128">
                 </div>
+
+                <!-- Selector de color -->
                 <div class="control-panel text-center">
                     <label for="colorPicker" class="form-label">Selector</label>
                     <input type="color" id="colorPicker" class="form-control form-control-color neumorphic-input">
                 </div>
             </div>
 
-            <!-- Cuadro de color -->
+            <!-- Cuadro de color dinámico y código hexadecimal -->
             <div class="mt-5 text-center">
-                <div id="colorBox" class="color-box mx-auto mb-4"></div>
-                <p id="hexCode" class="fs-4"></p>
+                <div id="colorBox" class="color-box mx-auto mb-4"></div> <!-- Cuadro donde se muestra el color -->
+                <p id="hexCode" class="fs-4"></p> <!-- Muestra el código hexadecimal del color seleccionado -->
             </div>
         </div>
 
-        <!-- Footer -->
+        <!-- Pie de página -->
         <footer class="text-white py-3">
             <div class="container text-center">
                 <p class="mb-0">&copy; 2025 - Todos los derechos reservados | Carlos Cruz</p>
             </div>
         </footer>
     </div>
+
+    <!-- Enlace al archivo de JavaScript para manejar la lógica de cambio de color -->
     <script src="./Js/main.js"></script>
 </body>
 
